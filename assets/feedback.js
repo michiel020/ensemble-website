@@ -11,7 +11,7 @@
 
   var KEY = 'ensemble-feedback';
   var NAME_KEY = 'ensemble-feedback-naam';
-  var VERSION = 'V6.9';
+  var VERSION = 'V6.10';
 
   function store(kind, fn) {
     try { return fn(window[kind]); } catch (e) { return null; }
@@ -26,7 +26,7 @@
 
   var css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = 'assets/feedback.css?v=' + VERSION;
+  css.href = '/assets/feedback.css?v=' + VERSION;
   document.head.appendChild(css);
 
   var CATEGORIES = ['Tekst', 'Inhoud', 'Ontwerp', 'Werkt niet', 'Overig'];

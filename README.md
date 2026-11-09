@@ -1,10 +1,11 @@
 # withensemble.nl
 
-Statische website van Ensemble (V6.9, design system "Blauw & Redactioneel"). Geen build-stap: `index.html` + `assets/`.
+Statische website van Ensemble (V6.10, design system "Blauw & Redactioneel"). Geen build-stap: `index.html` + `assets/`.
 
 - Live: https://withensemble.nl (Netlify-site `withensemble`, https://withensemble.netlify.app)
 - Bron van copy, design system en versiegeschiedenis: `~/Documents/# Claude/Projecten/Duo propositie/` (Web/v6.x)
 - `styleguide.html` — levende styleguide (kleur, type, componenten)
+- `en/index.html` — Engelse versie op https://withensemble.nl/en/ (sinds V6.10). Bewust verborgen: geen taalknop, `noindex`, niet in de sitemap. Alleen bereikbaar door /en/ in te tikken. Assets via absolute paden (`/assets/…`).
 - `_headers` — cache- en beveiligingsheaders voor Netlify · `robots.txt`, `sitemap.xml`
 
 Lokaal bekijken: `python3 -m http.server 8000` in deze map, dan http://localhost:8000.
