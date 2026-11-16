@@ -1,0 +1,45 @@
+# Ensemble website — checks on every push to main and to claude/** branches.
+# Level A in "Werkwijze softwareontwikkeling" (chapter 11): links, secrets, HTML.
+# Same check locally: ./scripts/check.sh
+# Deploying stays with Netlify; this workflow never publishes anything.
+
+name: Site
+
+on:
+  push:
+    branches: ['main', 'claude/**']
+  workflow_dispatch:
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Links and secrets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the secrets scan reads the whole history
+
+      - name: Internal links resolve
+        run: ./scripts/check.sh
+
+      - name: No secrets in the history
+        # The container runs as another user than the checkout; tell git that is fine.
+        run: |
+          docker run --rm -v "$PWD:/repo" \
+            -e GIT_CONFIG_COUNT=1 -e GIT_CONFIG_KEY_0=safe.directory -e GIT_CONFIG_VALUE_0='*' \
+            zricethezav/gitleaks:v8.18.4 detect --source /repo --redact --no-banner -v
+
+      - name: HTML validation (advisory)
+        continue-on-error: true
+        run: |
+          source scripts/site-dirs.sh
+          find $SITE_DIRS -name '*.html' -not -path '*/node_modules/*' | sort -u \
+            | xargs npx --yes html-validate@8.24.1
