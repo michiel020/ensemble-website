@@ -1,5 +1,6 @@
 # Ensemble website — checks on every push to main and to claude/** branches.
 # Level A in "Werkwijze softwareontwikkeling" (chapter 11): links, secrets, HTML.
+# HTML validation blocks (since 16 November 2026: no errors left).
 # Same check locally: ./scripts/check.sh
 # Deploying stays with Netlify; this workflow never publishes anything.
 
@@ -37,8 +38,7 @@ jobs:
             -e GIT_CONFIG_COUNT=1 -e GIT_CONFIG_KEY_0=safe.directory -e GIT_CONFIG_VALUE_0='*' \
             zricethezav/gitleaks:v8.18.4 detect --source /repo --redact --no-banner -v
 
-      - name: HTML validation (advisory)
-        continue-on-error: true
+      - name: HTML validation
         run: |
           source scripts/site-dirs.sh
           find $SITE_DIRS -name '*.html' -not -path '*/node_modules/*' | sort -u \
