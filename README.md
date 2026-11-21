@@ -17,3 +17,8 @@ Open de site met `?feedback` (bijv. https://withensemble.nl/?feedback) om feedba
 - Code: `assets/feedback.js` + `assets/feedback.css` (css wordt alleen geladen in feedbackmodus)
 - Opslag: Netlify Forms, formulier `feedback` (verborgen formulier onderaan `index.html` — veldnamen gelijk houden met `feedback.js`)
 - Ophalen: `node export-feedback.mjs` in `~/Documents/# Claude/Projecten/Duo propositie/Feedback/` → werklijst `feedback-JJJJ-MM-DD.md`
+
+## Vindbaarheid (V6.13)
+- Social image per taal: `assets/og-image.jpg` (NL) en `assets/og-image-en.jpg` (EN, bron: `Duo propositie/Web/v6.13/og-bron/`).
+- Structured data (schema.org JSON-LD) in de `<head>` van beide pagina's: Organization, Person (Michiel, Reinout), WebSite, WebPage. Logo voor Google: `assets/logo-ensemble-512.png`. Bij tekstwijzigingen de JSON-LD meenemen (beschrijving en titel staan erin).
+- `llms.txt` — samenvatting van de site voor AI-zoekmachines (Engels).

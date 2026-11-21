@@ -1,0 +1,27 @@
+# Ensemble
+
+> Ensemble gets new initiatives off the ground. Two entrepreneurs from Amsterdam, Michiel Alkemade and Reinout d'Engelbronner, who get public-private initiatives, consortia, and ventures up and running in weeks instead of months.
+
+## Pages
+
+- [Ensemble (English)](https://withensemble.nl/en/): who we work for, our approach, how a project runs, the Energy Hubs Knowledge Platform case, and who we are.
+- [Ensemble (Dutch)](https://withensemble.nl/): the same page in Dutch.
+
+## What Ensemble does
+
+- Starts and builds initiatives with several parties at the table and no one in charge: public-private initiatives, consortia, corporate ventures, startups, platforms, joint ventures, and transition programs.
+- Approach: build to learn (lean), move faster with AI, and succeed together with all stakeholders.
+- Rhythm: a check-in every week, a demo of what works every two weeks, a step back to the goals every month, and a milestone live every quarter. After the build, the initiative is handed over to a permanent team.
+- Not a fit for research or advisory reports, pure execution of an existing roadmap, or long-term management.
+
+## Case: Energy Hubs Knowledge Platform (Kennisplatform Energiehubs)
+
+- National platform for businesses that want to grow or go green but run into a congested power grid: https://energiehubs.nl
+- First version live in 9 weeks (2025), followed by a release every quarter based on user feedback.
+- Initiative of the Dutch Ministry of Economic Affairs and Climate Policy, RVO, Netbeheer Nederland, and PVB; client TKI Urban Energy.
+
+## Contact
+
+- Email: hallo@withensemble.nl
+- Michiel Alkemade: https://www.linkedin.com/in/michielalkemade/
+- Reinout d'Engelbronner: https://www.linkedin.com/in/rdengelbronner/

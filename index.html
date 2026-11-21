@@ -42,6 +42,129 @@
     .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
     .contact-sub { font-family: var(--f-display); font-weight: 700; font-size: var(--fs-h3); color: var(--lavender); margin: 1rem 0 0; }
   </style>
+  <!-- Structured data (schema.org JSON-LD) -->
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://withensemble.nl/#organization",
+        "name": "Ensemble",
+        "url": "https://withensemble.nl/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://withensemble.nl/assets/logo-ensemble-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://withensemble.nl/assets/og-image.jpg",
+        "description": "Ensemble krijgt nieuwe initiatieven van de grond. Twee ondernemers die publiek-private initiatieven, consortia en ventures in weken werkend maken.",
+        "slogan": "Wij krijgen nieuwe initiatieven van de grond.",
+        "email": "hallo@withensemble.nl",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amsterdam",
+          "addressCountry": "NL"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Netherlands"
+        },
+        "founder": [
+          {
+            "@id": "https://withensemble.nl/#michiel"
+          },
+          {
+            "@id": "https://withensemble.nl/#reinout"
+          }
+        ],
+        "knowsAbout": [
+          "Venture building",
+          "Publiek-private samenwerking",
+          "Consortia",
+          "Corporate ventures",
+          "Startups",
+          "Lean startup",
+          "Productontwikkeling",
+          "Kunstmatige intelligentie",
+          "Transitieprogramma's"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hallo@withensemble.nl",
+          "availableLanguage": [
+            "nl",
+            "en"
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://withensemble.nl/#michiel",
+        "name": "Michiel Alkemade",
+        "description": "Michiel brengt ideeën van nul naar één en creëert het momentum om te starten.",
+        "image": "https://withensemble.nl/assets/foto-michiel.jpg",
+        "url": "https://www.linkedin.com/in/michielalkemade/",
+        "sameAs": [
+          "https://www.linkedin.com/in/michielalkemade/",
+          "https://howmightwe.agency/"
+        ],
+        "worksFor": {
+          "@id": "https://withensemble.nl/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://withensemble.nl/#reinout",
+        "name": "Reinout d'Engelbronner",
+        "description": "Reinout maakt complexe ideeën begrijpelijk, brengt de juiste mensen bij elkaar en bouwt draagvlak en structuur.",
+        "image": "https://withensemble.nl/assets/foto-reinout.jpg",
+        "url": "https://www.linkedin.com/in/rdengelbronner/",
+        "sameAs": [
+          "https://www.linkedin.com/in/rdengelbronner/"
+        ],
+        "worksFor": {
+          "@id": "https://withensemble.nl/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://withensemble.nl/#website",
+        "url": "https://withensemble.nl/",
+        "name": "Ensemble",
+        "publisher": {
+          "@id": "https://withensemble.nl/#organization"
+        },
+        "inLanguage": [
+          "nl-NL",
+          "en-US"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://withensemble.nl/#webpage",
+        "url": "https://withensemble.nl/",
+        "name": "Ensemble — Jouw idee en ambitie. Onze schouders eronder.",
+        "description": "Ensemble krijgt nieuwe initiatieven van de grond. Twee ondernemers die publiek-private initiatieven, consortia en ventures in weken werkend maken.",
+        "inLanguage": "nl-NL",
+        "isPartOf": {
+          "@id": "https://withensemble.nl/#website"
+        },
+        "about": {
+          "@id": "https://withensemble.nl/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://withensemble.nl/assets/og-image.jpg",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
