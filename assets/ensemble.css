@@ -194,6 +194,8 @@ h3, .h3 { font-size: var(--fs-h3); font-weight: 700; line-height: 1.15; letter-s
 .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .rows > li { border-bottom: 1px solid var(--line); padding-block: clamp(1.25rem, 2.4vw, 2rem); }
 .band-navy .rows, .band-navy .rows > li { border-color: var(--line-dark); }
+.faq .rows h3 { margin-bottom: 0.5rem; }
+.faq .rows p { margin: 0; max-width: 62ch; }
 
 /* grote uitspraken-lijst ("Wanneer bel je ons") — zonder nummers */
 .claims p { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.5rem, 3.2vw, 2.625rem); line-height: 1.08; letter-spacing: -0.025em; color: var(--navy); margin: 0; }

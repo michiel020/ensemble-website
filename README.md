@@ -22,3 +22,8 @@ Open de site met `?feedback` (bijv. https://withensemble.nl/?feedback) om feedba
 - Social image per taal: `assets/og-image.jpg` (NL) en `assets/og-image-en.jpg` (EN, bron: `Duo propositie/Web/v6.13/og-bron/`).
 - Structured data (schema.org JSON-LD) in de `<head>` van beide pagina's: Organization, Person (Michiel, Reinout), WebSite, WebPage. Logo voor Google: `assets/logo-ensemble-512.png`. Bij tekstwijzigingen de JSON-LD meenemen (beschrijving en titel staan erin).
 - `llms.txt` — samenvatting van de site voor AI-zoekmachines (Engels).
+
+## Veelgestelde vragen + titels (V6.14)
+- Blok "Veelgestelde vragen" (`#vragen`) op NL en EN, vóór contact. Dezelfde vragen staan als `FAQPage` in de JSON-LD: wijzig je een vraag of antwoord, pas dan beide aan.
+- Titels: "Ensemble — Nieuwe initiatieven in weken van de grond" / "Ensemble — Getting new initiatives off the ground in weeks".
+- Stylesheet staat op `ensemble.css?v=6.14`. `/assets/*` wordt een jaar gecachet (`_headers`), dus bij elke CSS-wijziging het `?v=` ophogen in `index.html`, `en/index.html` en `styleguide.html`.
