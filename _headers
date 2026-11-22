@@ -4,3 +4,5 @@
   Referrer-Policy: strict-origin-when-cross-origin
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+/styleguide.html
+  X-Robots-Tag: noindex, nofollow
