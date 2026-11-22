@@ -27,3 +27,9 @@ Open de site met `?feedback` (bijv. https://withensemble.nl/?feedback) om feedba
 - Blok "Veelgestelde vragen" (`#vragen`) op NL en EN, vóór contact. Dezelfde vragen staan als `FAQPage` in de JSON-LD: wijzig je een vraag of antwoord, pas dan beide aan.
 - Titels: "Ensemble — Nieuwe initiatieven in weken van de grond" / "Ensemble — Getting new initiatives off the ground in weeks".
 - Stylesheet staat op `ensemble.css?v=6.14`. `/assets/*` wordt een jaar gecachet (`_headers`), dus bij elke CSS-wijziging het `?v=` ophogen in `index.html`, `en/index.html` en `styleguide.html`.
+
+## Meten en cookies (V6.16)
+- Google Tag Manager `GTM-NCMFDF5D` (account en container "withensemble.nl", op michiel.alkemade@gmail.com) in de `<head>` van alle pagina's, plus de `<noscript>` direct na `<body>`.
+- Tags: cookiebanner (Consent Initialization, "Koekje erbij?" / "Fancy a cookie?", keuze 12 maanden in `localStorage` als `cookie_consent`), GA4 `G-EXNS0M8BDT` (alleen na toestemming; GA-account "withensemble.nl", michiel@hellolabs.nl is beheerder) en PostHog (organisatie en project "withensemble.nl", EU, `persistence: 'memory'` tot toestemming).
+- Privacyverklaring: `privacy/index.html` (NL) en `en/privacy/index.html` (EN). Ze beschrijven precies deze tags en knopteksten: pas ze samen aan. Links met `#cookie-settings` of `data-cookie-settings` openen de banner opnieuw (footer: "Cookie-instellingen").
+- Geen CSP op deze site. Voeg je er een toe, gebruik dan `'strict-dynamic'` plus de hash van het GTM-snippet (zie hellolabs.nl).
