@@ -25,6 +25,7 @@ Open de site met `?feedback` (bijv. https://withensemble.nl/?feedback) om feedba
 
 ## Veelgestelde vragen + titels (V6.14)
 - Blok "Veelgestelde vragen" (`#vragen`) op NL en EN, vóór contact. Dezelfde vragen staan als `FAQPage` in de JSON-LD: wijzig je een vraag of antwoord, pas dan beide aan.
+- **V6.17 (24 nov 2026):** Engelse FAQ tijdelijk van /en/ gehaald (blok én `FAQPage` in de JSON-LD), omdat de teksten nog niet goed zijn. NL-FAQ staat er nog. Geparkeerde tekst: `Duo propositie/Web/v6.17/faq-en-geparkeerd.html`.
 - Titels: "Ensemble — Nieuwe initiatieven in weken van de grond" / "Ensemble — Getting new initiatives off the ground in weeks".
 - Stylesheet staat op `ensemble.css?v=6.14`. `/assets/*` wordt een jaar gecachet (`_headers`), dus bij elke CSS-wijziging het `?v=` ophogen in `index.html`, `en/index.html` en `styleguide.html`.
 
