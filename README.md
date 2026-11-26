@@ -34,3 +34,9 @@ Open de site met `?feedback` (bijv. https://withensemble.nl/?feedback) om feedba
 - Tags: cookiebanner (Consent Initialization, "Koekje erbij?" / "Fancy a cookie?", keuze 12 maanden in `localStorage` als `cookie_consent`), GA4 `G-EXNS0M8BDT` (alleen na toestemming; GA-account "withensemble.nl", michiel@hellolabs.nl is beheerder) en PostHog (organisatie en project "withensemble.nl", EU, `persistence: 'memory'` tot toestemming).
 - Privacyverklaring: `privacy/index.html` (NL) en `en/privacy/index.html` (EN). Ze beschrijven precies deze tags en knopteksten: pas ze samen aan. Links met `#cookie-settings` of `data-cookie-settings` openen de banner opnieuw (footer: "Cookie-instellingen").
 - Geen CSP op deze site. Voeg je er een toe, gebruik dan `'strict-dynamic'` plus de hash van het GTM-snippet (zie hellolabs.nl).
+
+## Volgende release
+
+Niet-urgente wijzigingen wachten hier en gaan samen live.
+
+- `sitemap.xml`: de privacypagina's (`/privacy/`, `/en/privacy/`) staan erin, met hreflang (branch `claude/sitemap-privacy`).

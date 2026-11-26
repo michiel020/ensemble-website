@@ -14,4 +14,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://withensemble.nl/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://withensemble.nl/"/>
   </url>
+  <url>
+    <loc>https://withensemble.nl/privacy/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://withensemble.nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://withensemble.nl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://withensemble.nl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://withensemble.nl/en/privacy/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://withensemble.nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://withensemble.nl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://withensemble.nl/privacy/"/>
+  </url>
 </urlset>
